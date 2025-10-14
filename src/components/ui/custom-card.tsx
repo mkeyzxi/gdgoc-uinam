@@ -17,7 +17,7 @@ export const CardInterest = ({category, children, from, to}: {category: string, 
 		// 		<TypographyH3>Web Development</TypographyH3>
 		// 	</div>
 		// </section>
-		<section className={`w-64 bg-gradient-to-br hover:bg-gradient-to-tl transition-all ${from} ${to} shadow-md border border-gray-300 flex flex-col`}>
+		<section className={`w-64 bg-gradient-to-br hover:bg-gradient-to-tl transition-all ${from} ${to} shadow-md flex flex-col`}>
 
 			<div className="flex-1 flex items-center justify-center p-2 ">
 				{/* <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" fill="none" stroke="black"
