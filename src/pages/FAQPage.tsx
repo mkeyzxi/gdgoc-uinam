@@ -4,6 +4,7 @@ import IndicatorLoadingStack from "@/layouts/StackIndiactorLoading";
 import Question from "@/layouts/Question";
 import images from "@/lib/data/faq-images";
 import React, { Suspense } from "react";
+// import { Helmet } from "react-helmet-async";
 
 const Stack = React.lazy(() => import('@/components/Stack'));
 // import { useEffect, useState } from "react";
@@ -21,6 +22,7 @@ const FAQPage = () => {
 
   return (
     <section className="min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-green-50 to-green-100 pl-6 md:px-6 overflow-hidden">
+      
       <div className=" grid grid-cols-1 lg:grid-cols-3 gap-10 container mx-auto max-w-7xl place-items-center">
         {/* Kolom FAQ */}
         <div className="lg:col-span-2 w-full order-2 lg:order-1">
