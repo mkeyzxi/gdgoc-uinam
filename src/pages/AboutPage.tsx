@@ -1,12 +1,15 @@
 import { TypographyH2 } from "@/components/ui/typographyh2";
 import { TypographyAbout } from "@/components/ui/typography-about";
 import CircularGallery from "@/components/CircularGallery";
+import ScrollVelocity from "@/components/ScrollVelocity";
 // import CircularGallery from './CircularGallery'
 const AboutPage = () => {
 	return (
-		<main className="container grid grid-cols-1 md:grid-cols-2 gap-5 ">
+		<main className=" flex flex-col gap-10 md:gap-16 ">
+			
 			{/* Section ini akan menjadi parent dan mengambil 1 kolom (penuh) atau 1/2 kolom (md) */}
-			<section className="">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-5 ">
+				<section className="">
 				{/* Tambahkan kelas 'w-full' pada img untuk memastikan lebar gambar 100% 
 					dari parent-nya. Hapus atribut 'width="100%"' yang merupakan atribut HTML
 					dan ganti dengan kelas Tailwind CSS 'w-full' untuk konsistensi.
@@ -33,6 +36,13 @@ const AboutPage = () => {
 					Kami berfokus menciptakan lingkungan belajar yang kolaboratif melalui berbagai kegiatan seperti workshop, seminar, dan hackathon, agar mahasiswa siap menghadapi tantangan dunia teknologi.
 				</TypographyAbout>
 			</section>
+			</div>
+			<ScrollVelocity
+  texts={['Empowering Tech', 'Shaping the Future']} 
+  velocity={120} 
+  className="custom-scroll-text"
+/>
+			
 		</main>
 	)
 }

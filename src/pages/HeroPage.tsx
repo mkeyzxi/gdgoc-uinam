@@ -9,6 +9,7 @@ import logo from '../assets/icon-GDG.svg'
 import { TypographyH1 } from '@/components/ui/typographyh1';
 import { TypographyHeading } from '@/components/ui/typography-heading';
 import { ButtonOutline } from '@/components/ui/buttonoutline';
+
 function HeroPage() {
 	const items = [
 		{
@@ -43,7 +44,7 @@ function HeroPage() {
 
 	return (
 
-		<main className=" mx-auto flex min-h-screen flex-col items-center justify-center p-4 gap-1 w-full">
+		<main className="  flex min-h-screen flex-col items-center justify-center *:gap-1 w-full z-10">
 			<CardNav
 				logo={logo}
 				logoAlt="Company Logo"
@@ -58,6 +59,7 @@ function HeroPage() {
 			<TypographyH1 />
 			<TypographyHeading >  Komunitas Developer Masa Depan di UIN Alauddin Makassar. Tingkatkan skill, perluas jaringan, dan mulai berkontribusi bagi sekitarmu.</TypographyHeading>
 			<ButtonOutline />
+			
 		</main>
 
 	)
