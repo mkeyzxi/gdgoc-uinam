@@ -120,7 +120,7 @@ export default function Stack({
                 height: cardDimensions.height
               }}
             >
-              <img src={card.img} alt={`card-${card.id}`} className="w-full h-full object-cover pointer-events-none" />
+              <img src={card.img} alt={`card-${card.id}`} loading='lazy' className="w-full h-full object-cover pointer-events-none" />
             </motion.div>
           </CardRotate>
         );

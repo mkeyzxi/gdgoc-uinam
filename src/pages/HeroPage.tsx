@@ -5,46 +5,20 @@ import CardNav from '@/components/CardNav';
 // import CardNav from './CardNav'
 // import CardNav from './components/CardNav';
 
+
 import logo from '../assets/icon-GDG.svg'
 import { TypographyH1 } from '@/components/ui/typographyh1';
 import { TypographyHeading } from '@/components/ui/typography-heading';
 import { ButtonOutline } from '@/components/ui/buttonoutline';
 
+import items from '@/lib/data/items';
+
 function HeroPage() {
-	const items = [
-		{
-			label: "About",
-			bgColor: "#0D0716",
-			textColor: "#fff",
-			links: [
-				{ label: "Company", href: "/about/company", ariaLabel: "About Company" },
-				{ label: "Careers", href: "/about/careers", ariaLabel: "About Careers" }
-			]
-		},
-		{
-			label: "Projects",
-			bgColor: "#170D27",
-			textColor: "#fff",
-			links: [
-				{ label: "Featured", href: "/projects/featured", ariaLabel: "Featured Projects" },
-				{ label: "Case Studies", href: "/projects/case-studies", ariaLabel: "Project Case Studies" }
-			]
-		},
-		{
-			label: "Contact",
-			bgColor: "#271E37",
-			textColor: "#fff",
-			links: [
-				{ label: "Email", href: "mailto:hello@example.com", ariaLabel: "Email us" },
-				{ label: "Twitter", href: "https://twitter.com/yourhandle", ariaLabel: "Twitter" },
-				{ label: "LinkedIn", href: "https://www.linkedin.com/in/yourprofile", ariaLabel: "LinkedIn" }
-			]
-		}
-	];
+	
 
 	return (
 
-		<main className="  flex min-h-screen flex-col items-center justify-center *:gap-1 w-full z-10">
+		<main className=" px-5 flex mt-52 flex-col items-center justify-center *:gap-1 w-full z-10 md:h-screen md:mt-0">
 			<CardNav
 				logo={logo}
 				logoAlt="Company Logo"
@@ -54,7 +28,7 @@ function HeroPage() {
 				buttonBgColor="#111"
 				buttonTextColor="#fff"
 				ease="power3.out"
-				className='fixed top-0'
+				className='fixed top-0 '
 			/>
 			<TypographyH1 />
 			<TypographyHeading >  Komunitas Developer Masa Depan di UIN Alauddin Makassar. Tingkatkan skill, perluas jaringan, dan mulai berkontribusi bagi sekitarmu.</TypographyHeading>

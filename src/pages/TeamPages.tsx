@@ -32,17 +32,18 @@ const TeamPages = () => {
 		// 	</div>
 		// </main>
 
-		<main className=" mx-auto flex flex-col justify-center items-center px-4 md:px-8">
+		<main className=" mx-auto flex flex-col justify-center items-center px-4 md:px-8 lg:px-38 py-8">
   <TeamNav activeTab={activeTab} setActiveTab={setActiveTab} />
 
   <div
     className="
       grid
       grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4
-      gap-6
+      gap-2
       w-full
       justify-items-center
       mt-6
+	  
     "
   >
     {filteredMembers.map((member, i) => (

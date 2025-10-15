@@ -262,20 +262,43 @@
     @apply bg-background text-foreground font-sans antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold text-foreground;
   }
 }
 
 
 @keyframes slideDown {
-  from { height: 0; opacity: 0; }
-  to { height: var(--radix-accordion-content-height); opacity: 1; }
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  from { height: var(--radix-accordion-content-height); opacity: 1; }
-  to { height: 0; opacity: 0; }
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 [data-state='open'].animate-slideDown {
@@ -284,4 +307,38 @@
 
 [data-state='closed'].animate-slideUp {
   animation: slideUp 0.2s ease-in;
+}
+
+
+/* animasi gerak gradasi */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 500% 500%;
+  animation: gradientMove 3s ease infinite;
+}
+
+/* sedikit efek rotasi supaya mirip Stack */
+.stack-card {
+  transform: rotate(-2deg);
+}
+
+.stack-card:nth-child(2) {
+  transform: rotate(2deg);
+}
+
+.stack-card:nth-child(3) {
+  transform: rotate(-1deg);
 }

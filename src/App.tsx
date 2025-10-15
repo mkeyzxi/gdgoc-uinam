@@ -3,6 +3,7 @@ import './App.css'
 import CallToAction from './layouts/CallToAction';
 import Footer from './layouts/Footer';
 import AboutPage from './pages/AboutPage';
+// import ActivitiesPage from './pages/ActivityPage';
 // import Question from './layouts/Question';
 import FAQPage from './pages/FAQPage';
 import HeroPage from './pages/HeroPage';
@@ -33,8 +34,10 @@ const App = () => {
         subJudul="Ikuti berbagai sesi pembelajaran, workshop, dan event seru yang diadakan oleh GDGOC UINAM. Saatnya kembangkan kemampuanmu dan terhubung dengan komunitas developer lainnya!"
         link="https://gdg.community.dev/gdg-on-campus-uin-alauddin-makassar-makassar-indonesia/?fbclid=PAZXh0bgNhZW0CMTEAAafg8z2j23RgG_GUxCooyzpcE2gF27H6ll7DUhTYaJC1WCsdZjh7Ua3PImI50w_aem_s_8-pI0O2EF_e3_FhAN60A"
       >Lihat Kegiatan</CallToAction>
+      <FAQPage />
     <TeamPages />
-    <FAQPage />
+    {/* <ActivitiesPage /> */}
+    
     <Footer />
     </>
   )

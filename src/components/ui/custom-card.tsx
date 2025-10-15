@@ -135,10 +135,11 @@ export const CardProfile = ({
       `}
 		>
 			{/* Foto Profil */}
-			<div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-24 lg:h-24 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
+			<div className="w-20 h-20 sm:w-24 sm:h-24 md:w-20 md:h-20 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
 				<img
 					src={img}
 					alt="Profile"
+					loading="lazy"
 					className="w-full h-full object-cover"
 				/>
 			</div>
