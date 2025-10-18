@@ -4,7 +4,7 @@ import { BrainCircuit, Cloud, Earth, PanelsRightBottom, Smartphone } from "lucid
 
 const LearningPage = () => {
 	return (
-		<main className=" flex flex-col justify-center items-center py-10 gap-10">
+		<main id="workshop" className=" flex flex-col justify-center items-center py-10 gap-10">
 			<TypographyH2 className="px-5 ">Belajar dan Dalami 5 Bidang Ini di GDGOC UINAM</TypographyH2>
 			<div className="w-full lg:w-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 justify-center items-center gap-y-4 px-5">
 				<CardInterest category="Website" from="from-green-400" to="to-green-600"><Earth size={70} strokeWidth={1.3} /></CardInterest>
