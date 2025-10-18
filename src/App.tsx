@@ -26,7 +26,7 @@ const App = () => {
     <CallToAction
         judul="Bergabung Bersama GDGOC UINAM!"
         subJudul="Jadilah bagian dari komunitas developer masa depan. Temukan inspirasi, pelajari teknologi terbaru, dan bangun proyek nyata bersama sesama mahasiswa UIN Alauddin Makassar."
-        link="https://gdg.community.dev/"
+        link="https://docs.google.com/forms/d/e/1FAIpQLSdux5PgYo46NhLVhtt-y5zPGtz5RxELtDKShAL8YTg4wg9mKA/viewform"
       >Gabung Sekarang</CallToAction>
     <LearningPage />
      <CallToAction
