@@ -3,15 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Circular Gallery Loader</title>
+  <title>Card Profile Skeleton</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-   
+    /* Animasi shimmer untuk efek skeleton */
+    @keyframes pulse-bg {
+      0% {
+        background-position: -200px 0;
+      }
+      100% {
+        background-position: calc(220px + 100%) 0;
+      }
+    }
+    .skeleton {
+      background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 37%, #e5e7eb 63%);
+      background-size: 400% 100%;
+      animation: pulse-bg 1.4s ease infinite;
+    }
   </style>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gradient-to-b from-green-50 to-green-100">
+<body class="flex items-center justify-center min-h-screen bg-gray-100 p-4">
 
- 
+  <!-- Skeleton Card -->
+  <div
+    class="
+      w-full max-w-[210px] sm:max-w-[200px] md:max-w-[380px]
+      bg-white shadow-md rounded-2xl p-4 sm:p-5 lg:p-6
+      flex flex-col lg:flex-row items-center gap-3 lg:gap-4 text-center lg:text-left
+    "
+  >
+    <!-- Foto Profil (Skeleton Circle) -->
+    <div class="w-20 h-20 sm:w-24 sm:h-24 md:w-20 md:h-20 rounded-full skeleton flex-shrink-0"></div>
+
+    <!-- Detail Profil -->
+    <div class="flex flex-col items-center lg:items-start w-full min-w-0">
+      <!-- Nama -->
+      <div class="h-4 w-32 sm:w-40 md:w-44 rounded-md skeleton mb-2"></div>
+      <!-- Role -->
+      <div class="h-3 w-24 sm:w-28 rounded-md skeleton"></div>
+
+      <!-- Sosial Media -->
+      <div class="flex gap-2 sm:gap-3 mt-3 flex-wrap justify-center lg:justify-start">
+        <div class="w-6 h-6 rounded-sm skeleton"></div>
+        <div class="w-6 h-6 rounded-sm skeleton"></div>
+        <div class="w-6 h-6 rounded-sm skeleton"></div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
