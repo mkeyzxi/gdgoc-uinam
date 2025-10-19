@@ -6,7 +6,7 @@ export default function Footer() {
 			<div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
 				{/* Logo + Deskripsi */}
 				<div className="col-span-2 flex flex-col gap-3">
-					<div className="flex items-center gap-2">
+					<div className="flex items-center gap-3">
 						<img
 							src={icon}
 							alt="GDGOC Logo"
@@ -28,9 +28,9 @@ export default function Footer() {
 					<h3 className="font-semibold text-lg mb-3 text-blue-500">Explore</h3>
 					<ul className="space-y-2 text-gray-700">
 						<li><a href="#about" className="hover:text-blue-500">About</a></li>
-						<li><a href="#projects" className="hover:text-green-500">Projects</a></li>
-						<li><a href="#events" className="hover:text-yellow-500">Events</a></li>
-						<li><a href="#team" className="hover:text-red-500">Team</a></li>
+						<li><a href="#core-team" className="hover:text-green-500">Team</a></li>
+						<li><a href="#faq" className="hover:text-yellow-500">Pertanyaan</a></li>
+						{/* <li><a href="#team" className="hover:text-red-500">Team</a></li> */}
 					</ul>
 				</div>
 
