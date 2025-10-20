@@ -128,7 +128,7 @@ export const CardProfile = ({
 			className={`
         w-full
         max-w-[210px] sm:max-w-[200px] md:max-w-[380px]
-        bg-white shadow-md rounded-2xl p-4 sm:p-5 lg:p-6
+        bg-white shadow-md rounded-2xl p-2 sm:p-5 lg:p-2
         flex flex-col lg:flex-row items-center gap-3 lg:gap-4 text-center lg:text-left
         transition-transform duration-200 hover:scale-[1.02]
         ${className}
