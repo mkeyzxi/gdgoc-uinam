@@ -36,9 +36,9 @@
 const faqs = [
 	{
 		id: "item-1",
-		question: "Apa itu Google Developer Group On Campus UINAM?",
+		question: "Apa itu Google Developer Group On UINAM?",
 		answer:
-			"GDG On Campus UINAM adalah komunitas developer di UIN Alauddin Makassar yang berfokus pada pembelajaran, kolaborasi, dan inovasi berbasis teknologi Google.",
+			"GDG On UINAM adalah komunitas developer di UIN Alauddin Makassar yang berfokus pada pembelajaran, kolaborasi, dan inovasi berbasis teknologi Google.",
 	},
 	{
 		id: "item-2",

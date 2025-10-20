@@ -16,7 +16,7 @@ export function TypographyH1() {
       transition={{ duration: 0.8, ease: "easeOut" }} // animasi halus
       className="scroll-m-20 sm:text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-balance lg:max-w-4xl"
     >
-      GOOGLE DEVELOPER GROUP ON CAMPUS UINAM
+      GOOGLE DEVELOPER GROUP ON UINAM
     </motion.h1>
   );
 }
