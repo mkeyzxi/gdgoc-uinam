@@ -39,8 +39,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 
 interface TeamNavProps {
-	activeTab: "semua" | "creative" | "technical";
-	setActiveTab: React.Dispatch<React.SetStateAction<"semua" | "creative" | "technical">>;
+	activeTab: "semua" | "creative" | "event" | "technical";
+	setActiveTab: React.Dispatch<React.SetStateAction<"semua" | "creative" | "event" | "technical">>;
 }
 
 const TeamNav = ({ activeTab, setActiveTab }: TeamNavProps) => {
@@ -52,7 +52,7 @@ const TeamNav = ({ activeTab, setActiveTab }: TeamNavProps) => {
 			{/* Navigasi */}
 			<nav className="mt-3 md:mt-0">
 				<ul className="flex gap-6 text-gray-700 text-sm font-medium">
-					{["semua", "creative", "technical"].map((tab) => (
+					{["semua", "creative", "event", "technical"].map((tab) => (
 						<li key={tab} className="relative">
 							<button
 								onClick={() => setActiveTab(tab as typeof activeTab)}

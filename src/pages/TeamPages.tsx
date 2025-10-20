@@ -87,9 +87,9 @@ const CardProfile = React.lazy(() =>
 );
 
 const TeamPages = () => {
-	const [activeTab, setActiveTab] = useState<"semua" | "creative" | "technical">("semua");
+	const [activeTab, setActiveTab] = useState<"semua" | "creative" | "event" | "technical">("semua");
 
-	// Filter sesuai tab aktif
+	// filter sesuai tab aktif
 	const filteredMembers =
 		activeTab === "semua"
 			? teamMembers

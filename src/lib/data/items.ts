@@ -40,7 +40,7 @@ const items = [
 			{label: 'Kenali Kami', href: '#about', ariaLabel: 'Tentang GDGOC UINAM'},
 			// {label: 'Visi & Misi', href: '#core-team', ariaLabel: 'Visi dan Misi GDGOC UINAM'},
 			{label: 'Tim Kami', href: '#core-team', ariaLabel: 'Tim GDGOC UINAM'},
-			{ label: 'Pertanyaan Umum', href: '#faq', ariaLabel: 'Pertanyaan Umum GDGOC UINAM' },
+			{ label: 'Pertanyaan Umum', href: '#faq', ariaLabel: 'Pertanyaan Umum GDG ON UINAM' },
 		],
 	},
 	{
@@ -58,9 +58,9 @@ const items = [
 		bgColor: '#22C55E',
 		textColor: '#fff',
 		links: [
-			{label: 'Email', href: 'mailto:gdgocuinam@gmail.com', ariaLabel: 'Email GDGOC UINAM'},
-			{label: 'Instagram', href: 'https://www.instagram.com/gdgoc_uinam/', ariaLabel: 'Instagram GDGOC UINAM'},
-			{label: 'LinkedIn', href: 'https://www.linkedin.com/company/gdgocuinam', ariaLabel: 'LinkedIn GDGOC UINAM'},
+			{label: 'Email', href: 'mailto:gdgocuinam@gmail.com', ariaLabel: 'Email GDG ON UINAM'},
+			{label: 'Instagram', href: 'https://www.instagram.com/gdgoc_uinam/', ariaLabel: 'Instagram GDG ON UINAM'},
+			{label: 'LinkedIn', href: 'https://www.linkedin.com/company/gdgocuinam', ariaLabel: 'LinkedIn GDG ON UINAM'},
 		],
 	},
 ];

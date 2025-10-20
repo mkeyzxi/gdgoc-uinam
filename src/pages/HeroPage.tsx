@@ -18,10 +18,11 @@ function HeroPage() {
 
 	return (
 
-		<main className=" px-5 flex mt-52 mb-8 flex-col items-center justify-center *:gap-1 w-full z-10 md:h-screen md:mt-0 md:mb-0">
+		<main className="relative px-5 flex pt-52 pb-8 flex-col items-center justify-center *:gap-1 w-full z-10 md:h-screen md:pt-0 md:pb-0 bg-gradient-to-br from-green-500 via-blue-500 to-yellow-500  overflow-hidden">
+
 			<CardNav
 				logo={logo}
-				logoAlt="GDGOC UIN Alauddin Makassar"
+				logoAlt="GDG ON UIN Alauddin Makassar"
 				items={items}
 				baseColor="#fff"
 				menuColor="#000"
