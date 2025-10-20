@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
 import { useEffect, useRef } from 'react';
 
@@ -477,10 +478,7 @@ class App {
     font: string
   ) {
     const defaultItems = [
-      {
-        image: `/img/about/coreteam-1.webp`,
-        text: 'Kolaborasi'
-      },
+     
       {
         image: `/img/about/coreteam-2.webp`,
         text: 'Inovasi'
@@ -504,6 +502,10 @@ class App {
       {
         image: `/img/about/coreteam-7.webp`,
         text: 'Kreatif'
+      },
+       {
+        image: `/img/about/coreteam-1.webp`,
+        text: 'Kolaborasi'
       },
     ];
 

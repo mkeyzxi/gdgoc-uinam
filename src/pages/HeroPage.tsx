@@ -18,7 +18,11 @@ function HeroPage() {
 
 	return (
 
-		<main className="relative px-5 flex pt-52 pb-8 flex-col items-center justify-center *:gap-1 w-full z-10 md:h-screen md:pt-0 md:pb-0 bg-gradient-to-br from-green-500 via-blue-500 to-yellow-500  overflow-hidden">
+		// <main className="relative px-5 flex pt-52 pb-8 flex-col items-center justify-center *:gap-1 w-full z-10 md:h-screen md:pt-0 md:pb-0 bg-gradient-to-br from-green-500 via-blue-500 to-yellow-500  overflow-hidden">
+		<main className="relative px-5 flex pt-52 pb-8 flex-col items-center justify-center *:gap-1 w-full z-10 md:h-screen md:pt-0 md:pb-0 bg-gradient-to-br from-white via-green-400 to-blue-400 overflow-hidden">
+ {/* <main className="relative px-5 flex pt-52 pb-8 flex-col items-center justify-center *:gap-1 w-full z-10 md:h-screen md:pt-0 md:pb-0 bg-gradient-to-br from-yellow-400 via-lime-400 to-green-500 overflow-hidden"> */}
+{/* <main className="relative px-5 flex pt-52 pb-8 flex-col items-center justify-center *:gap-1 w-full z-10 md:h-screen md:pt-0 md:pb-0 bg-gradient-to-br from-green-400 via-emerald-500 to-blue-500 overflow-hidden"> */}
+
 
 			<CardNav
 				logo={logo}
