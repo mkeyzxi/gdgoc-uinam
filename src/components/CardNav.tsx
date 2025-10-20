@@ -192,7 +192,7 @@ const CardNav: React.FC<CardNavProps> = ({
 
           <button
             type="button"
-            className="card-nav-cta-button hidden md:inline-flex border-0 !bg-blue-500 rounded-[calc(0.75rem-0.2rem)] px-4 h-full font-medium cursor-pointer transition-colors duration-300 items-center justify-center text-[15px] md:text-[16px] hover:opacity-75 order-3"
+            className="card-nav-cta-button hidden md:inline-flex border-0 !bg-green-400 rounded-[calc(0.75rem-0.2rem)] px-4 h-full font-medium cursor-pointer transition-colors duration-300 items-center justify-center text-[15px] md:text-[16px] hover:opacity-75 order-3"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
             onClick={ () => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdux5PgYo46NhLVhtt-y5zPGtz5RxELtDKShAL8YTg4wg9mKA/viewform', '_blank') }
           >
