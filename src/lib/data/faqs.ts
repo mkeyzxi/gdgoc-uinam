@@ -49,7 +49,7 @@ const faqs = [
 	{
 		id: "item-3",
 		question: "Apakah bergabung berbayar?",
-		answer: "Tidak. Semua kegiatan dan keanggotaan GDGOC UINAM gratis.",
+		answer: "Tidak. Semua kegiatan dan keanggotaan GDG On UINAM gratis.",
 	},
 	{
 		id: "item-4",
