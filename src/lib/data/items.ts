@@ -49,6 +49,7 @@ const items = [
 		textColor: '#fff',
 		links: [
 			{label: 'Workshop', href: '#workshop', ariaLabel: 'Workshop GDGOC UINAM'},
+			{label: 'Member Onboarding', href: 'https://gdg.community.dev/events/details/google-gdg-on-campus-uin-alauddin-makassar-makassar-indonesia-presents-member-onboarding-day-20252026/', ariaLabel: 'Workshop GDGOC UINAM'},
 			// {label: 'Seminar', href: '/events/seminar', ariaLabel: 'Seminar GDGOC UINAM'},
 			// {label: 'Hackathon', href: '/events/hackathon', ariaLabel: 'Hackathon GDGOC UINAM'},
 		],
