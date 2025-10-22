@@ -11,7 +11,7 @@ const Question = () => {
 			<div className="w-full  ">
 				
 
-				{/* Accordion Container */}
+				
 				<Accordion.Root
 					type="single"
 					collapsible
@@ -25,12 +25,12 @@ const Question = () => {
 							className="group overflow-hidden relative"
 						>
 							<Accordion.Header className="flex">
-								{/* Garis vertikal di samping (seperti gambar) */}
+								
 								<div
 									className="absolute left-0 top-0 h-full w-1 transition-colors duration-300"
 									data-state={id}
 								>
-									{/* Mengganti warna border/strip: blue-400 untuk aktif, transparan untuk non-aktif */}
+									
 									<div className={`h-full w-full transition-colors duration-300 group-data-[state=open]:bg-blue-400`} />
 								</div>
 

@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useTransform } from 'motion/react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { MotionProps } from 'framer-motion';
 
 interface CardRotateProps {
@@ -47,6 +47,7 @@ interface StackProps {
   sendToBackOnClick?: boolean;
   cardsData?: { id: number; img: string }[];
   animationConfig?: { stiffness: number; damping: number };
+  onReady?: () => void; // dipanggil ketika semua gambar sudah siap
 }
 
 export default function Stack({
@@ -55,7 +56,8 @@ export default function Stack({
   cardDimensions = { width: 208, height: 208 },
   cardsData = [],
   animationConfig = { stiffness: 260, damping: 20 },
-  sendToBackOnClick = false
+  sendToBackOnClick = false,
+  onReady
 }: StackProps) {
   const [cards, setCards] = useState(
     cardsData.length
@@ -79,6 +81,19 @@ export default function Stack({
         }
       ]
   );
+
+  const [loadedCount, setLoadedCount] = useState(0);
+
+  // Ketika semua gambar sudah loaded, panggil onReady()
+  useEffect(() => {
+    if (cards.length > 0 && loadedCount >= cards.length) {
+      onReady?.();
+    }
+  }, [loadedCount, cards.length, onReady]);
+
+  const handleImageLoad = () => {
+    setLoadedCount(prev => prev + 1);
+  };
 
   const sendToBack = (id: number) => {
     setCards(prev => {
@@ -124,9 +139,14 @@ export default function Stack({
                   height: cardDimensions.height,
                 },
               } as MotionProps)}
-              
             >
-              <img src={card.img} alt={`card-${card.id}`} loading='lazy' className="w-full h-full object-cover pointer-events-none" />
+              <img
+                src={card.img}
+                alt={`card-${card.id}`}
+                loading='lazy'
+                className="w-full h-full object-cover pointer-events-none"
+                onLoad={handleImageLoad} // ✅ panggil ketika gambar selesai dimuat
+              />
             </motion.div>
           </CardRotate>
         );

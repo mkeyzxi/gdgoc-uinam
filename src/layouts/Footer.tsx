@@ -14,7 +14,7 @@ export default function Footer() {
 							className="w-8 h-8"
 						/>
 						<h2 className="text-lg font-semibold">
-							Google Developer Groups <br /> On Campus UIN Alauddin Makassar
+							Google Developer Groups <br /> On UIN Alauddin Makassar
 						</h2>
 					</div>
 					<p className="text-sm text-gray-600 leading-relaxed">

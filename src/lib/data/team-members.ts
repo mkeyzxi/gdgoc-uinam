@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 const teamMembers = [
 		{
 		name: "Dhimas Jayakusuma",
@@ -61,6 +54,14 @@ const teamMembers = [
 		category: "creative",
 		field: "Public Relation",
 		img: "/img/core-team/puput.webp",
+		sosialMedia: { instagram: "", github: "", linkedin: "" },
+	},
+	{
+		name: "Adriansyah",
+		role: "Public Relations Officer",
+		category: "creative",
+		field: "Public Relation",
+		img: "/img/core-team/no-profile.webp",
 		sosialMedia: { instagram: "", github: "", linkedin: "" },
 	},
 	{
