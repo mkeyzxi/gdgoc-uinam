@@ -496,10 +496,6 @@ class App {
         text: 'Komunitas'
       },
       {
-        image: `/img/about/coreteam-6.webp`,
-        text: 'Teknologi'
-      },
-      {
         image: `/img/about/coreteam-7.webp`,
         text: 'Kreatif'
       },
