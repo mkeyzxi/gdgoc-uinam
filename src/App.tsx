@@ -31,7 +31,7 @@ const App = () => {
     <LearningPage />
      <CallToAction
         judul="Lihat Kegiatan & Sesi GDG On UINAM"
-        subJudul="Ikuti berbagai sesi pembelajaran, workshop, dan event seru yang diadakan oleh GDGOC UINAM. Saatnya kembangkan kemampuanmu dan terhubung dengan komunitas developer lainnya!"
+        subJudul="Ikuti berbagai sesi pembelajaran, workshop, dan event seru yang diadakan oleh GDG On UINAM. Saatnya kembangkan kemampuanmu dan terhubung dengan komunitas developer lainnya!"
         link="https://gdg.community.dev/gdg-on-campus-uin-alauddin-makassar-makassar-indonesia/?fbclid=PAZXh0bgNhZW0CMTEAAafg8z2j23RgG_GUxCooyzpcE2gF27H6ll7DUhTYaJC1WCsdZjh7Ua3PImI50w_aem_s_8-pI0O2EF_e3_FhAN60A"
       >Lihat Kegiatan</CallToAction>
       <FAQPage />
