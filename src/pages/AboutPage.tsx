@@ -40,10 +40,10 @@ const AboutPage = () => {
 					transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
 					className="text-justify"
 				>
-					<TypographyH2>GDGOC UINAM itu Apa sih?</TypographyH2>
+					<TypographyH2>GDG On UINAM itu Apa sih?</TypographyH2>
 
 					<TypographyAbout>
-						Google Developer Groups On Campus UIN Alauddin Makassar adalah komunitas teknologi
+						Google Developer Groups On UIN Alauddin Makassar adalah komunitas teknologi
 						yang mewadahi mahasiswa untuk belajar, berkolaborasi, dan berinovasi di bidang
 						pengembangan perangkat lunak, AI, dan inovasi digital.
 					</TypographyAbout>
