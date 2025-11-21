@@ -9,7 +9,6 @@ const FIREBASE_PROJECT_MESSAGING_SENDER_ID = import.meta.env.VITE_FIREBASE_MESSA
 const FIREBASE_PROJECT_APP_ID = import.meta.env.VITE_FIREBASE_PROJECT_APP_ID;
 const FIREBASE_PROJECT_MEASUREMENT_ID = import.meta.env.VITE_FIREBASE_MEASUREMENT_ID;
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
 // Import the functions you need from the SDKs you need
 import {initializeApp} from 'firebase/app';
 import {getAuth} from 'firebase/auth';

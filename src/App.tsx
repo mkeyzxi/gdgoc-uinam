@@ -10,8 +10,12 @@ import BerandaPage from './pages/BerandaPage';
 // import HeroPage from './pages/HeroPage';
 // import LearningPage from './pages/LearningPage';
 // import TeamPages from './pages/TeamPages';
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
+import ProtectedRoute from './lib/ProtectedRoute';
+import AddActivityPage from './pages/AddActivityPage';
+import { AuthProvider } from './lib/AuthContext';
+import ActivityListPage from './pages/ActivityListPage';
 // import TeamNav from './layouts/TeamNav';
 // import AboutPage from './pages/AboutPage';
 // import LearningPage from './pages/LearningPage';
@@ -24,10 +28,21 @@ import LoginPage from './pages/LoginPage';
 const App = () => {
   return (
     <>
-    <Routes>
-      <Route path="/" element={<BerandaPage />}></Route>
-      <Route path="/login" element={<LoginPage />}></Route>
-    </Routes>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<BerandaPage />}></Route>
+          <Route path="/login" element={<LoginPage />}></Route>
+          <Route path="/addActivity" element={<ProtectedRoute >
+            <AddActivityPage />
+          </ProtectedRoute>}></Route>
+          <Route path="/listActivity" element={<ProtectedRoute >
+            <ActivityListPage />
+          </ProtectedRoute>}></Route>
+
+
+
+        </Routes>
+      </AuthProvider>
     </>
   )
 }
