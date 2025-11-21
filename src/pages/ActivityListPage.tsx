@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { collection, deleteDoc, doc, onSnapshot, orderBy, query } from "firebase/firestore";
 import { db } from "@/lib/firebase";
-import { useAuth } from "@/lib/useAuth";
 
 interface Activity {
 	id: string;
@@ -12,8 +11,8 @@ interface Activity {
 }
 
 export default function ActivityListPage() {
-	const { user } = useAuth();
 	const [items, setItems] = useState<Activity[]>([]);
+	
 
 	useEffect(() => {
 		const q = query(collection(db, "activities"), orderBy("createdAt", "desc"));
