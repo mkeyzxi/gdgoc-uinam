@@ -1,0 +1,13 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Semua koleksi / dokumen
+    match /{document=**} {
+      // semua orang boleh membaca
+      allow read: if true;
+
+      // hanya user yang ter-auth bisa create/update/delete
+      allow create, update, delete: if request.auth != null;
+    }
+  }
+}

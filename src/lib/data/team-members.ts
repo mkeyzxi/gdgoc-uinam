@@ -174,6 +174,14 @@ const teamMembers = [
 		img: "/img/core-team/gimnastiar.webp",
 		sosialMedia: { instagram: "", github: "", linkedin: "" },
 	},
+	{
+		name: "Muh. Anwar Syafriawan",
+		role: "Cloud Engineer",
+		category: "technical",
+		field: "Cloud Computing",
+		img: "/img/core-team/no-profile.webp",
+		sosialMedia: { instagram: "", github: "", linkedin: "" },
+	},
 	
 	{
 		name: "Dhiwa Alief Caprillo",
