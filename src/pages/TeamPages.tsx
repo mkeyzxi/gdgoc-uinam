@@ -19,6 +19,12 @@ const TeamPages = () => {
 			? teamMembers
 			: teamMembers.filter((member) => member.category === activeTab);
 
+	// const handleClick = (name: string, img: string, role: string, sosialMedia: { [key: string]: string }) => {
+	// 	// Contoh aksi saat kartu diklik
+	// 	alert(`Anda mengklik profil ${name} (${role}) ${sosialMedia} (${img})`);
+	// 	// Bisa ditambahkan logika lain, seperti membuka modal detail, dll.
+	// }
+
 	return (
 		<main id="core-team" className=" mx-auto flex flex-col justify-center items-center px-4 md:px-8 lg:px-38 py-8">
 			<TeamNav activeTab={activeTab} setActiveTab={setActiveTab} />
@@ -53,6 +59,7 @@ const TeamPages = () => {
 									img={member.img}
 									role={member.role}
 									sosialMedia={member.sosialMedia}
+									// onClick={() => {handleClick(member.name, member.img,member.role, member.sosialMedia)}}
 								>
 									{member.name}
 								</CardProfile>

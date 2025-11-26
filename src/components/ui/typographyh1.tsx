@@ -1,12 +1,18 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 // export function TypographyH1() {
 //   return (
-//     <h1 className="scroll-m-20   sm:text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-balance lg:max-w-4xl">
-//       GOOGLE DEVELOPER GROUP ON CAMPUS UINAM
-//     </h1>
-//   )
+//     <motion.h1
+//       initial={{ opacity: 0, y: 30 }}     
+//       animate={{ opacity: 1, y: 0 }}     
+//       transition={{ duration: 0.8, ease: "easeOut" }} 
+//       className="scroll-m-20 md:text-left text-slate-800 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-balance lg:max-w-4xl"
+//     >
+//       GOOGLE DEVELOPER GROUP ON UINAM
+//     </motion.h1>
+//   );
 // }
+import { motion } from "framer-motion";
 
 export function TypographyH1() {
   return (
@@ -14,7 +20,17 @@ export function TypographyH1() {
       initial={{ opacity: 0, y: 30 }}     
       animate={{ opacity: 1, y: 0 }}     
       transition={{ duration: 0.8, ease: "easeOut" }} 
-      className="scroll-m-20 sm:text-center text-slate-800 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-balance lg:max-w-4xl"
+      className="
+        scroll-m-20 
+        text-slate-800
+        text-2xl 
+        sm:text-4xl 
+        md:text-5xl 
+        lg:text-6xl 
+        font-extrabold tracking-tight 
+        text-balance 
+        lg:max-w-4xl
+      "
     >
       GOOGLE DEVELOPER GROUP ON UINAM
     </motion.h1>

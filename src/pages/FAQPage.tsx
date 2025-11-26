@@ -32,7 +32,7 @@ const FAQPage = () => {
         {/* Kolom FAQ */}
         <div className="lg:col-span-2 w-full order-2 lg:order-1">
           <TypographyH2 className="text-center text-3xl font-extrabold text-gray-900">
-            Frequently Asked Questions
+            Beberapa Pertanyaan GDGOC UINAM
           </TypographyH2>
           <div className="transition-shadow duration-300 p-1 md:p-4">
             <Question />

@@ -16,6 +16,8 @@ import ProtectedRoute from './lib/ProtectedRoute';
 import AddActivityPage from './pages/AddActivityPage';
 import { AuthProvider } from './lib/AuthContext';
 import ActivityListPage from './pages/ActivityListPage';
+import DetailNav from './components/DetailNav';
+// import HeroPages from './pages/HeroPages';
 // import TeamNav from './layouts/TeamNav';
 // import AboutPage from './pages/AboutPage';
 // import LearningPage from './pages/LearningPage';
@@ -32,13 +34,14 @@ const App = () => {
         <Routes>
           <Route path="/" element={<BerandaPage />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
+          {/* <Route path="/hero" element={<HeroPages />}></Route> */}
           <Route path="/addActivity" element={<ProtectedRoute >
             <AddActivityPage />
           </ProtectedRoute>}></Route>
           <Route path="/listActivity" element={<ProtectedRoute >
             <ActivityListPage />
           </ProtectedRoute>}></Route>
-
+            <Route path="/detail" element={<DetailNav ></DetailNav>}></Route>
 
 
         </Routes>
