@@ -1,4 +1,5 @@
-import { FaEnvelope,  FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+// import { FaEnvelope,  FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import icon from "../assets/gdgoc.svg";
 export default function Footer() {
 	return (
@@ -19,7 +20,7 @@ export default function Footer() {
 					</div>
 					<p className="text-sm text-gray-600 leading-relaxed">
 						Komunitas developer masa depan di UIN Alauddin Makassar.
-						Tingkatkan skill, perluas jaringan, dan mulai berkontribusi bagi sekitarmu.
+						Tingkatkan skill, perluas jaringan, dan mulai berkontribusi bagi sekitarmu. Salam hangat dari kami Google Developer Group On Campus UIN Alauddin Makassar (GDGOC UINAM)
 					</p>
 				</div>
 
@@ -38,18 +39,18 @@ export default function Footer() {
 				<div>
 					<h3 className="font-semibold text-lg mb-3 text-green-500">Contact</h3>
 					<ul className="space-y-2 text-gray-700">
-						<li className="flex items-center gap-2 hover:text-red-500">
+						{/* <li className="flex items-center gap-2 hover:text-red-500">
 							<FaEnvelope /> <a href="mailto:gdgoc.uinam@gmail.com">Email</a>
-						</li>
+						</li> */}
 						<li className="flex items-center gap-2 hover:text-yellow-500">
 							<FaInstagram /> <a href="https://twitter.com/">Instagram</a>
 						</li>
 						<li className="flex items-center gap-2 hover:text-green-500">
 							<FaWhatsapp /> <a href="https://twitter.com/">Whatsapp</a>
 						</li>
-						<li className="flex items-center gap-2 hover:text-blue-500">
+						{/* <li className="flex items-center gap-2 hover:text-blue-500">
 							<FaLinkedin /> <a href="https://linkedin.com/">LinkedIn</a>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 			</div>

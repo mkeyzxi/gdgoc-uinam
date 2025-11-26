@@ -9,7 +9,7 @@ const CircularGallery = React.lazy(() => import('@/components/CircularGallery'))
 
 const AboutPage = () => {
 	return (
-		<main id="about" className="flex flex-col gap-10 md:gap-16 lg:pt-14">
+		<main id="about" className="flex flex-col gap-10 md:gap-16 lg:pt-14 ">
 			{/* Grid utama */}
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-5 px-5 md:px-12 lg:px-20">
 				{/* Kiri - Gallery */}

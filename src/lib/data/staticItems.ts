@@ -14,7 +14,8 @@ export const ABOUT_CARD: CardNavItem = {
 
 export const CONTACT_CARD: CardNavItem = {
   label: "Kontak",
-  bgColor: "#22C55E",
+  // bgColor: "#22C55E",
+  bgColor: "#eab308",
   textColor: "#fff",
   links: [
     { label: "Email", href: "mailto:gdgocuinam@gmail.com", ariaLabel: "Email GDG ON UINAM" },
