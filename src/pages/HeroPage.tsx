@@ -179,10 +179,11 @@ function HeroPage() {
       <div
         className="
           absolute 
-          bottom-22 right-36
+          -bottom-50 -right-16
           sm:bottom-6 sm:right-6
-          md:bottom-8 md:right-8
-          lg:bottom-18 lg:right-20
+          md:-bottom-18 md:right-22
+          lg:bottom-26 lg:right-38
+          xl:bottom-20 xl:right-38
         "
       >
         <div style={{ height: '360px', width: '280px' }} className="sm:w-[320px] md:w-[360px] lg:w-[420px]">

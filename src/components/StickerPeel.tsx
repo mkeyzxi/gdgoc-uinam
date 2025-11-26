@@ -1,4 +1,5 @@
-import { useRef, useEffect, useMemo, CSSProperties } from 'react';
+import { useRef, useEffect, useMemo } from 'react';
+import type { CSSProperties } from 'react';
 import { gsap } from 'gsap';
 import { Draggable } from 'gsap/Draggable';
 
