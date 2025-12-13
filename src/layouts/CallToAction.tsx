@@ -12,7 +12,7 @@ interface CallToActionProps {
 
 const CallToAction = ({ judul, subJudul, link, children }: CallToActionProps) => {
   return (
-    <section className="w-full bg-blue-400 text-white flex flex-col justify-center items-center text-center gap-1 py-12 px-6 md:px-10 lg:px-28  mt-5 shadow-lg">
+    <section className="w-full bg-green-400 text-white flex flex-col justify-center items-center text-center gap-1 py-16 px-6 md:px-10 lg:px-28  mt-5 shadow-lg">
       <TypographyH4 className="text-white ">{judul}</TypographyH4>
       {subJudul && (
         <TypographyAbout>{subJudul}</TypographyAbout>

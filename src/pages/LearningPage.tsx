@@ -1,20 +1,144 @@
-import { CardInterest } from "@/components/ui/custom-card";
+import SpotlightCard from "@/components/SpotlightCard";
 import { TypographyH2 } from "@/components/ui/typographyh2";
-import { BrainCircuit, Cloud, Earth, PanelsRightBottom, Smartphone } from "lucide-react";
 
 const LearningPage = () => {
 	return (
-		<main id="workshop" className=" flex flex-col justify-center items-center py-10 gap-10">
-			<TypographyH2 className="px-5 ">Belajar dan Dalami 5 Bidang Ini di GDG On UINAM</TypographyH2>
-			<div className="w-full lg:w-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 justify-center items-center gap-y-4 px-5">
-				<CardInterest category="Website" from="from-green-400" to="to-green-600"><Earth size={70} strokeWidth={1.3} /></CardInterest>
-				<CardInterest category="Mobile" from="from-blue-400" to="to-blue-600"><Smartphone size={70} strokeWidth={1.3}/></CardInterest>
-				<CardInterest category="UI/UX" from="from-gray-100" to="to-gray-200"><PanelsRightBottom size={70} strokeWidth={1.3} /></CardInterest>
-				<CardInterest category="AI" from="from-yellow-400" to="to-yellow-600"><BrainCircuit size={70} strokeWidth={1.3}/></CardInterest>
-				<CardInterest category="Cloud" from="from-red-400" to="to-red-600"><Cloud size={70} strokeWidth={1.3}/></CardInterest>
+		<main
+			id="workshop"
+			className="flex flex-col justify-center items-center py-10 gap-10"
+		>
+			<TypographyH2 className="px-5">
+				Belajar dan Dalami 5 Bidang Ini di GDG On UINAM
+			</TypographyH2>
+
+			{/* GRID WRAPPER */}
+			<div
+				className="
+          w-full lg:w-auto
+          grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5
+          items-stretch
+          gap-y-4 gap-3
+          px-6 sm:px-10 lg:px-24
+        "
+			>
+				{/* WEBSITE DEVELOPMENT */}
+				<SpotlightCard
+					className="custom-spotlight-card h-full flex flex-row sm:flex-col items-start sm:items-center shadow-sm rounded-xl hover:scale-[1.02] transition-all"
+					spotlightColor="rgba(5, 223, 114, 0.47)"
+				>
+					<div className="w-28 h-28 rounded-lg overflow-hidden">
+						<img
+							src="/img/bidang/website.avif"
+							alt="website"
+							className="w-full h-full object-cover"
+							loading="lazy"
+						/>
+					</div>
+
+					<div className="flex flex-col gap-2 flex-1">
+						<h3 className="text-xl font-semibold tracking-wide">Website</h3>
+						<p className="text-sm leading-relaxed">
+							Membangun website modern yang cepat dan responsif.
+						</p>
+					</div>
+				</SpotlightCard>
+
+				{/* MOBILE DEVELOPMENT */}
+				<SpotlightCard
+					className="custom-spotlight-card h-full flex flex-row sm:flex-col items-start sm:items-center shadow-sm rounded-xl hover:scale-[1.02] transition-all"
+					spotlightColor="rgba(5, 223, 114, 0.47)"
+				>
+					<div className="w-28 h-28 rounded-lg overflow-hidden">
+						<img
+							src="/img/bidang/mobile.avif"
+							alt="mobile"
+							className="w-full h-full object-cover"
+							loading="lazy"
+						/>
+					</div>
+
+					<div className="flex flex-col gap-2 flex-1">
+						<h3 className="text-xl font-semibold tracking-wide">Mobile</h3>
+						<p className="text-sm leading-relaxed">
+							Membangun aplikasi mobile modern yang cepat dan intuitif.
+						</p>
+					</div>
+				</SpotlightCard>
+
+				{/* ARTIFICIAL INTELLIGENCE */}
+				<SpotlightCard
+					className="custom-spotlight-card h-full flex flex-row sm:flex-col items-start sm:items-center shadow-sm rounded-xl hover:scale-[1.02] transition-all"
+					spotlightColor="rgba(5, 223, 114, 0.47)"
+				>
+					<div className="w-28 h-28 rounded-lg overflow-hidden">
+						<img
+							src="/img/bidang/ai.avif"
+							alt="Artificial Intelligence"
+							className="w-full h-full object-cover"
+							loading="lazy"
+						/>
+					</div>
+
+					<div className="flex flex-col gap-2 flex-1">
+						<h3 className="text-xl font-semibold tracking-wide">
+							Artificial Intelligence
+						</h3>
+						<p className="text-sm leading-relaxed">
+							Mengembangkan solusi cerdas berbasis data dan model AI.
+						</p>
+					</div>
+				</SpotlightCard>
+
+				{/* UI/UX DESIGN */}
+				<SpotlightCard
+					className="custom-spotlight-card h-full flex flex-row sm:flex-col items-start sm:items-center shadow-sm rounded-xl hover:scale-[1.02] transition-all"
+					spotlightColor="rgba(5, 223, 114, 0.47)"
+				>
+					<div className="w-28 h-28 rounded-lg overflow-hidden">
+						<img
+							src="/img/bidang/uiux.avif"
+							alt="ui/ux"
+							className="w-full h-full object-cover"
+							loading="lazy"
+						/>
+					</div>
+
+					<div className="flex flex-col gap-2 flex-1">
+						<h3 className="text-xl font-semibold tracking-wide">
+							UI/UX Design
+						</h3>
+						<p className="text-sm leading-relaxed">
+							Merancang pengalaman digital yang jelas, nyaman, dan efektif.
+						</p>
+					</div>
+				</SpotlightCard>
+
+				{/* CLOUD COMPUTING */}
+				<SpotlightCard
+					className="custom-spotlight-card h-full flex flex-row sm:flex-col items-start sm:items-center shadow-sm rounded-xl hover:scale-[1.02] transition-all"
+					spotlightColor="rgba(5, 223, 114, 0.47)"
+				>
+					<div className="w-28 h-28 rounded-lg overflow-hidden">
+						<img
+							src="/img/bidang/cloud-computing.avif"
+							alt="cloud-computing"
+							className="w-full h-full object-cover"
+							loading="lazy"
+						/>
+					</div>
+
+					<div className="flex flex-col gap-2 flex-1">
+						<h3 className="text-xl font-semibold tracking-wide">
+							Cloud Computing
+						</h3>
+						<p className="text-sm leading-relaxed">
+							Mengelola layanan cloud yang scalable, aman, dan efisien.
+						</p>
+					</div>
+				</SpotlightCard>
 			</div>
 		</main>
-	)
-}
+	);
+};
 
 export default LearningPage;

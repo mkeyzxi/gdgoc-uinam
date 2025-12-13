@@ -27,7 +27,10 @@ import DetailNav from './components/DetailNav';
 // import TeamPages from './pages/TeamPages';
 // import { Button } from './components/ui/button'
 // import CardNav from './CardNav'
+// import useWindowWidth from './hooks/useWindowWidth';
 const App = () => {
+  // const resize = useWindowWidth();
+  // console.log(resize);
   return (
     <>
       <AuthProvider>
@@ -42,10 +45,12 @@ const App = () => {
             <ActivityListPage />
           </ProtectedRoute>}></Route>
             <Route path="/detail" element={<DetailNav ></DetailNav>}></Route>
-
+            
 
         </Routes>
+        
       </AuthProvider>
+      {/*  */}
     </>
   )
 }

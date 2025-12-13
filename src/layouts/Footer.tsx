@@ -64,7 +64,7 @@ export default function Footer() {
 					Made with <span className="text-red-500">❤️</span> by{" "}
 					<a
 						href="https://github.com/mkeyzxi"
-						className="text-blue-500 hover:underline font-medium"
+						className="text-green-500 hover:underline font-medium"
 					>
 						Core Team Website 
 					</a>

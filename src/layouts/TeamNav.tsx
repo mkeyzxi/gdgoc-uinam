@@ -12,16 +12,16 @@ const TeamNav = ({ activeTab, setActiveTab }: TeamNavProps) => {
 			<h2 className="text-2xl font-bold">Cores Team</h2>
 
 			{/* Navigasi */}
-			<nav className="mt-3 md:mt-0">
+			<nav className="mt-3 md:mt-0 ">
 				<ul className="flex gap-6 text-gray-700 text-sm font-medium">
 					{["semua", "creative", "event", "technical"].map((tab) => (
 						<li key={tab} className="relative">
 							<button
 								onClick={() => setActiveTab(tab as typeof activeTab)}
-								className={`capitalize px-1 pb-1 transition-colors duration-200 ${
+								className={`capitalize px-1 pb-1 transition-colors duration-200 md:text-xl ${
 									activeTab === tab
-										? "text-blue-600"
-										: "hover:text-blue-600 text-gray-700"
+										? "text-green-500"
+										: "hover:text-green-500 text-gray-700"
 								}`}
 							>
 								{tab}
@@ -32,7 +32,7 @@ const TeamNav = ({ activeTab, setActiveTab }: TeamNavProps) => {
 								{activeTab === tab && (
 									<motion.div
 										layoutId="activeTabUnderline"
-										className="absolute left-0 right-0 h-[2px] bg-blue-600 rounded-full"
+										className="absolute left-0 right-0 h-[2px] bg-green-500 rounded-full"
 										style={{ bottom: 0 }}
 										initial={{ opacity: 0 }}
 										animate={{ opacity: 1 }}
