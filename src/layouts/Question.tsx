@@ -31,12 +31,12 @@ const Question = () => {
 									data-state={id}
 								>
 									
-									<div className={`h-full w-full transition-colors duration-300 group-data-[state=open]:bg-blue-400`} />
+									<div className={`h-full w-full transition-colors duration-300 group-data-[state=open]:bg-green-400`} />
 								</div>
 
 								<Accordion.Trigger
 
-									className={`flex flex-1 justify-between items-center text-left w-full pl-5 pr-6 py-4 font-semibold transition-all duration-300 text-base md:text-lg group-data-[state=open]:text-blue-400 text-gray-800 hover:text-blue-400`}
+									className={`flex flex-1 justify-between items-center text-left w-full pl-5 pr-6 py-4 font-semibold transition-all duration-300 text-base md:text-lg group-data-[state=open]:text-green-400 text-gray-800 hover:text-green-400`}
 								>
 									{question}
 									<ChevronDown

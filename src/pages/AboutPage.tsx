@@ -65,7 +65,7 @@ const AboutPage = () => {
 			>
 				<ScrollVelocity
 					texts={["Empowering Tech", "Shaping the Future"]}
-					velocity={120}
+					velocity={30}
 					className="custom-scroll-text"
 				/>
 			</motion.div>

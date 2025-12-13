@@ -104,7 +104,7 @@ export default function AddActivityPage() {
         buttonTextColor="#fff"
         ease="power3.out"
         className="fixed top-0 w-full z-50 px-4"
-      ><button onClick={() => nav('/')} className=" card-nav-cta-button hidden md:inline-flex border-0 text-white !bg-blue-500 rounded-[calc(0.75rem-0.2rem)] px-4 h-full font-medium cursor-pointer transition-colors duration-300 items-center justify-center text-[15px] md:text-[16px] hover:opacity-75 order-3">
+      ><button onClick={() => nav('/')} className=" card-nav-cta-button hidden md:inline-flex border-0 text-white bg-green-500 rounded-[calc(0.75rem-0.2rem)] px-4 h-full font-medium cursor-pointer transition-colors duration-300 items-center justify-center text-[15px] md:text-[16px] hover:opacity-75 order-3">
 			Beranda
 		</button></CardNav>
 
