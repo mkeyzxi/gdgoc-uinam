@@ -18,7 +18,7 @@ const TeamNav = ({ activeTab, setActiveTab }: TeamNavProps) => {
 						<li key={tab} className="relative">
 							<button
 								onClick={() => setActiveTab(tab as typeof activeTab)}
-								className={`capitalize px-1 pb-1 transition-colors duration-200 md:text-xl ${
+								className={`capitalize px-1 pb-1 transition-colors duration-200 md:text-lg ${
 									activeTab === tab
 										? "text-green-500"
 										: "hover:text-green-500 text-gray-700"
@@ -27,7 +27,7 @@ const TeamNav = ({ activeTab, setActiveTab }: TeamNavProps) => {
 								{tab}
 							</button>
 
-							{/* Animasi underline biru */}
+							{/* animasi underline hijau */}
 							<AnimatePresence>
 								{activeTab === tab && (
 									<motion.div
