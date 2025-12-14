@@ -1,73 +1,175 @@
-# React + TypeScript + Vite
+![Google Developer On UIN Alauddin Makassar]([path/ke/gambar.jpg](https://gdgoc-uinam.web.app/assets/icon-GDG---bL0196.svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# GDG On Campus UIN Alauddin Makassar
 
-Currently, two official plugins are available:
+![GDG On Campus Logo](./public/assets/icon-GDG---bL0196.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Selamat datang di repositori **Website Resmi GDG On Campus UIN Alauddin Makassar** — sebuah rumah digital tempat ide bertumbuh, kode berkelana, dan komunitas bertemu.
 
-## React Compiler
+Website ini dibangun untuk mendukung aktivitas komunitas **Google Developer Groups On Campus (GDGOC)** di **UIN Alauddin Makassar**, mulai dari publikasi event, informasi komunitas, hingga autentikasi anggota.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Live Website**: https://gdgoc-uinam.web.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Fitur Utama
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🔐 **Authentication** menggunakan Firebase Authentication
+- 📦 **Manajemen Data** berbasis Firebase Firestore
+- ⚡ **UI Modern & Responsif** dengan shadcn/ui + Tailwind CSS
+- 🧩 Arsitektur komponen modular
+- 🚀 Siap dikembangkan untuk event, blog, dan dashboard komunitas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
+## 🧱 Tech Stack
+
+### Frontend
+- **React.js**
+- **TypeScript (TSX)**
+- **Tailwind CSS**
+- **shadcn/ui (New York Style)**
+- **Lucide Icons**
+
+### Backend & Services
+- **Firebase Authentication**
+- **Firebase Firestore**
+- **Firebase Hosting**
+
+### Package Manager
+- **pnpm** (cepat, hemat, modern)
+
+---
+
+## 📐 Konfigurasi UI (shadcn/ui)
+
+```json
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/index.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
   },
-])
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "registries": {
+    "@react-bits": "https://reactbits.dev/r/{name}.json"
+  }
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Struktur Proyek (Ringkas)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+my-gdgoc-app/
+├─ public/
+│  └─ assets/
+│     └─ icon-GDG---bL0196.svg
+├─ src/
+│  ├─ components/
+│  ├─ components/ui/
+│  ├─ hooks/
+│  ├─ lib/
+│  ├─ pages/
+│  ├─ index.css
+│  └─ main.tsx
+├─ firebase/
+│  ├─ config.ts
+│  ├─ auth.ts
+│  └─ firestore.ts
+├─ package.json
+└─ pnpm-lock.yaml
+```
+
+---
+
+## 🚀 Menjalankan Proyek Secara Lokal
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/mkeyzxi/gdgoc-uinam.git
+cd gdgoc-uinam
+```
+
+### 2. Install Dependencies
+
+```bash
+pnpm install
+```
+
+### 3. Konfigurasi Firebase
+
+Buat file `.env` dan isi:
+
+```env
+VITE_FIREBASE_API_KEY=xxxxx
+VITE_FIREBASE_AUTH_DOMAIN=xxxxx
+VITE_FIREBASE_PROJECT_ID=xxxxx
+VITE_FIREBASE_STORAGE_BUCKET=xxxxx
+VITE_FIREBASE_MESSAGING_SENDER_ID=xxxxx
+VITE_FIREBASE_APP_ID=xxxxx
+```
+
+### 4. Jalankan Development Server
+
+```bash
+pnpm dev
+```
+
+---
+
+## ☁️ Deployment
+
+Website ini di-*deploy* menggunakan **Firebase Hosting**.
+
+```bash
+pnpm build
+firebase deploy
+```
+
+---
+
+## 🎯 Tujuan Proyek
+
+- Menjadi pusat informasi resmi GDGOC UINAM
+- Media pembelajaran & kolaborasi developer kampus
+- Fondasi untuk pengembangan fitur lanjutan (event system, member dashboard, dll)
+
+---
+
+## 🤝 Kontribusi
+
+Kontribusi terbuka untuk seluruh anggota komunitas.
+
+1. Fork repository
+2. Buat branch fitur
+3. Commit dengan pesan yang jelas
+4. Pull Request 🚀
+
+---
+
+## 📜 Lisensi
+
+Proyek ini dibuat untuk keperluan edukasi dan komunitas GDG On Campus UIN Alauddin Makassar.
+
+---
+
+> _"Komunitas adalah kode yang hidup — tumbuh saat dibaca bersama."_
+
+💙 **GDG On Campus UIN Alauddin Makassar**
+
