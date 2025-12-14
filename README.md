@@ -1,8 +1,6 @@
-![Google Developer On UIN Alauddin Makassar]([path/ke/gambar.jpg](https://gdgoc-uinam.web.app/assets/icon-GDG---bL0196.svg)
+![GDG On Campus Logo](./public/assets/icon-GDG---bL0196.svg)
 
 # GDG On Campus UIN Alauddin Makassar
-
-![GDG On Campus Logo](./public/assets/icon-GDG---bL0196.svg)
 
 Selamat datang di repositori **Website Resmi GDG On Campus UIN Alauddin Makassar** — sebuah rumah digital tempat ide bertumbuh, kode berkelana, dan komunitas bertemu.
 
