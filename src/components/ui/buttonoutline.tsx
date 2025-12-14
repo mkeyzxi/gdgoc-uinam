@@ -30,13 +30,13 @@ export function ButtonOutline() {
   const scrollToAbout = () => {
     document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })
   }
+  
 
   return (
     <Button
       onClick={scrollToAbout}
       variant="outline"
-      className="
-        group
+      className={`group
         relative
         flex items-center gap-2 justify-center
         w-full sm:w-[160px] lg:w-[150px]
@@ -45,20 +45,19 @@ export function ButtonOutline() {
         /* base */
         border border-green-400/40
         text-slate-700
-        rounded-xl px-5 py-3
+        rounded-sm px-5 py-3
         bg-white/60 backdrop-blur-sm
 
         /* transitions */
         transition-all duration-300
 
         /* hover */
-        hover:bg-green-500 hover:text-white
-        hover:border-green-500
+        hover:bg-green-400 hover:text-white
+        hover:border-green-400
         hover:shadow-[0_0_20px_rgba(34,197,94,0.45)]
 
         /* subtle press effect */
-        active:scale-95
-      "
+        active:scale-95 mt-4`}
     >
       Kenali Kami
 

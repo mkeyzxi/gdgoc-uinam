@@ -1,0 +1,13 @@
+.cardSwap {
+	height: 600px;
+	position: relative !important;
+	right: -240px;
+	bottom: -140px;
+}
+
+@media (max-width: 767px) {
+	.cardSwap {
+		right: -100px;
+		bottom: 180px;
+	}
+}
