@@ -6,7 +6,7 @@ const teamMembers = [
 		field: "",
 		img: "/img/core-team/dhimas.webp",
 		sosialMedia: {
-			instagram: "",
+			instagram: "https://www.instagram.com/dhms_jk/",
 			github: "",
 			linkedin: "",
 		},
@@ -18,7 +18,7 @@ const teamMembers = [
 		field: "",
 		img: "/img/core-team/fathur.webp",
 		sosialMedia: {
-			instagram: "",
+			instagram: "https://www.instagram.com/fthur_rzq/",
 			github: "",
 			linkedin: "",
 		},
@@ -46,7 +46,7 @@ const teamMembers = [
 		category: "creative",
 		field: "Public Relation",
 		img: "/img/core-team/nurul.webp",
-		sosialMedia: { instagram: "", github: "", linkedin: "" },
+		sosialMedia: { instagram: "https://www.instagram.com/nrulmzafirah/", github: "", linkedin: "" },
 	},
 	{
 		name: "Annisa Aulia Putri",
@@ -70,7 +70,7 @@ const teamMembers = [
 		category: "creative",
 		field: "Social Media",
 		img: "/img/core-team/no-profile.webp",
-		sosialMedia: { instagram: "", github: "", linkedin: "" },
+		sosialMedia: { instagram: "https://www.instagram.com/ade.nurchalisa/", github: "", linkedin: "" },
 	},
 	{
 		name: "Hanum Salsabila",
@@ -78,7 +78,7 @@ const teamMembers = [
 		category: "creative",
 		field: "Social Media",
 		img: "/img/core-team/hanum.webp",
-		sosialMedia: { instagram: "", github: "", linkedin: "" },
+		sosialMedia: { instagram: "https://www.instagram.com/hnmslsbl_/", github: "", linkedin: "" },
 	},
 	{
 		name: "Shalsabila M",
@@ -94,7 +94,7 @@ const teamMembers = [
 		category: "creative",
 		field: "Videography",
 		img: "/img/core-team/anggi.webp",
-		sosialMedia: { instagram: "", github: "", linkedin: "" },
+		sosialMedia: { instagram: "https://www.instagram.com/anggi.rifqiadi/", github: "", linkedin: "" },
 	},
 	{
 		name: "Ferdiansyah Muhtar",
@@ -124,7 +124,7 @@ const teamMembers = [
 		category: "technical",
 		field: "Web Development",
 		img: "/img/core-team/fadila.webp",
-		sosialMedia: { instagram: "", github: "", linkedin: "" },
+		sosialMedia: { instagram: "https://www.instagram.com/_nfadllh/", github: "", linkedin: "" },
 	},
 	{
 		name: "Wira Fadhil",
@@ -132,7 +132,7 @@ const teamMembers = [
 		category: "technical",
 		field: "Website",
 		img: "/img/core-team/wira.webp",
-		sosialMedia: { instagram: "", github: "", linkedin: "" },
+		sosialMedia: { instagram: "https://www.instagram.com/wirafadhil_/", github: "", linkedin: "" },
 	},
 	{
 		name: "Andi Muhammad Said",
@@ -156,7 +156,7 @@ const teamMembers = [
 		category: "technical",
 		field: "Artificial Intelligence",
 		img: "/img/core-team/fadel.webp",
-		sosialMedia: { instagram: "", github: "", linkedin: "" },
+		sosialMedia: { instagram: "https://www.instagram.com/fadelhamkaa/", github: "", linkedin: "" },
 	},
 	{
 		name: "Siti Hardianti Ashari",
@@ -180,7 +180,7 @@ const teamMembers = [
 		category: "technical",
 		field: "Cloud Computing",
 		img: "/img/core-team/no-profile.webp",
-		sosialMedia: { instagram: "", github: "", linkedin: "" },
+		sosialMedia: { instagram: "https://www.instagram.com/wawan_1.1/", github: "", linkedin: "" },
 	},
 	
 	{
@@ -215,7 +215,7 @@ const teamMembers = [
 		category: "event",
 		field: "Event Management",
 		img: "/img/core-team/upik.webp",
-		sosialMedia: { instagram: "", github: "", linkedin: "" },
+		sosialMedia: { instagram: "https://www.instagram.com/upikgzli/", github: "", linkedin: "" },
 	},
 	{
 		name: "Afiqa Aulia Ahsani",

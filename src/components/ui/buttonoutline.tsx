@@ -45,7 +45,7 @@ export function ButtonOutline() {
         /* base */
         border border-green-400/40
         text-slate-700
-        rounded-xl px-5 py-3
+        rounded-sm px-5 py-3
         bg-white/60 backdrop-blur-sm
 
         /* transitions */

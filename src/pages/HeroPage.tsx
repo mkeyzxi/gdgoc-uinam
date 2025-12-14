@@ -44,8 +44,8 @@ function HeroPage() {
         ease="power3.out"
         className="fixed top-0 left-0"
       />
-      <main className='w-full overflow-hidden bg-green-100 h-screen flex flex-col md:flex-row justify-evenly items-center px-5 lg:px-20'>
-        <section className="md:flex-3 lg:flex-2   flex flex-col gap-1 md:gap-1 py-10 md:py-0 justify-between items-start">
+      <main className='w-full overflow-hidden bg-green-100 h-screen flex flex-col md:flex-row justify-evenly items-center px-5 lg:px-20 border border-b-green-500'>
+        <section className="md:flex-3 lg:flex-2 mt-24 md:mt-0  flex flex-col gap-1 md:gap-1 py-10 md:py-0 justify-between items-start">
           <TextType
             text={["Learn Together!", "Grow Together!", "Build Together!"]}
             typingSpeed={75}
@@ -53,13 +53,14 @@ function HeroPage() {
             showCursor={true}
             cursorCharacter="|"
           />
-          <h1 className='scroll-m-20 text-2xl md:text-5xl font-bold tracking-tight first:mt-0'>Google Developer Group <span className=' text-green-500'> On UINAM</span></h1>
+          <h1 className='scroll-m-20 text-2xl md:text-3xl lg:text-5xl font-bold tracking-tight first:mt-0'>Google Developer Group <span className=' text-green-500'> On UINAM</span></h1>
           <p className='md:text-xl leading-7 mt-2 md:mt-4 lg:mt-8'>Komunitas developer GDGOC UINAM di UIN Alauddin Makassar yang hadir untuk membantu mahasiswa meningkatkan skill, memperluas jaringan, dan berkonstribusi.</p>
           <ButtonOutline />
         </section>
-        <section className="hidden md:flex flex-1 ">
+        <section className=" md:flex flex-1 ">
 
-          <div style={{ height: '600px', position: 'relative', right: '-240px', bottom: '-140px' }}>
+          {/* <div style={{ height: '600px', position: 'relative', right: '-240px', bottom: '-140px' }} className='cardSwap'> */}
+          <div  className='cardSwap'>
             <CardSwap
               cardDistance={60}
               verticalDistance={70}

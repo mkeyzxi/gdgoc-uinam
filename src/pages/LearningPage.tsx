@@ -36,7 +36,7 @@ const LearningPage = () => {
 					</div>
 
 					<div className="flex flex-col gap-2 flex-1">
-						<h3 className="text-xl font-semibold tracking-wide">Website</h3>
+						<h3 className="text-xl font-semibold tracking-wide">Website Development</h3>
 						<p className="text-sm leading-relaxed">
 							Membangun website modern yang cepat dan responsif.
 						</p>
@@ -58,7 +58,7 @@ const LearningPage = () => {
 					</div>
 
 					<div className="flex flex-col gap-2 flex-1">
-						<h3 className="text-xl font-semibold tracking-wide">Mobile</h3>
+						<h3 className="text-xl font-semibold tracking-wide">Mobile Development</h3>
 						<p className="text-sm leading-relaxed">
 							Membangun aplikasi mobile modern yang cepat dan intuitif.
 						</p>

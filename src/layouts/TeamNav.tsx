@@ -9,7 +9,7 @@ const TeamNav = ({ activeTab, setActiveTab }: TeamNavProps) => {
 	return (
 		<header className="w-full flex flex-col md:flex-row justify-between items-center mb-8 border-b border-gray-200 pb-3">
 			{/* Judul */}
-			<h2 className="text-2xl font-bold">Cores Team</h2>
+			<h2 className="scroll-m-20  pb-2 text-xl md:text-3xl font-semibold tracking-tight ">Cores Team</h2>
 
 			{/* Navigasi */}
 			<nav className="mt-3 md:mt-0 ">
@@ -18,7 +18,7 @@ const TeamNav = ({ activeTab, setActiveTab }: TeamNavProps) => {
 						<li key={tab} className="relative">
 							<button
 								onClick={() => setActiveTab(tab as typeof activeTab)}
-								className={`capitalize px-1 pb-1 transition-colors duration-200 md:text-lg ${
+								className={`capitalize px-1 pb-1 transition-colors duration-200 md:text-md ${
 									activeTab === tab
 										? "text-green-500"
 										: "hover:text-green-500 text-gray-700"
